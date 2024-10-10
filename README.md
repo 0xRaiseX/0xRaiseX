@@ -1,7 +1,7 @@
 ## Hi there 👋
 
-# I'm a Backend developer
-## Python and Rust developer
+### I'm a Backend developer
+#### Python and Rust developer
 
 ### ✨ I can think and get results ✨
 
