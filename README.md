@@ -9,4 +9,3 @@
 
 ---
 I love minimalism. Contact me: Telegram @maximusnescafe 
-Thanks.
