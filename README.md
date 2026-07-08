@@ -1,11 +1,16 @@
-# Hi there 👋 I'm a Backend developer ✨
-### Python and Rust developer
+# Привет 👋 Я Backend- и DevOps-инженер ✨
+### Строю распределённые высоконагруженные системы
 
-### I can think and get results 
+Я проектирую и эксплуатирую бэкенд-сервисы и инфраструктуру, которая позволяет им работать под нагрузкой.
 
-- I really like dealing with complex systems, resources, and servers...
-- I mainly work with languages such as Python, Rust, and JavaScript.
-- In my free time, I work on my blockchain project. At the moment, I am accumulating the strength invested in this project. This activity satisfies my "technical creativity".
+- 🧩 Люблю работать с **распределёнными и высоконагруженными системами** — ресурсы, серверы и всё, что должно оставаться доступным под нагрузкой.
+- ☸️ Большой поклонник **Kubernetes** и всего, что связано с инфраструктурой: контейнеры, оркестрация, CI/CD, observability и автоматизация.
+- 🛠️ **DevOps**-подход — инфраструктура как код, надёжность и «скучные» (в хорошем смысле) деплои.
+- 💻 В основном работаю с **Python**.
+- 📈 Люблю продумывать сложные задачи и доводить их до реального результата.
+
+### 🧰 Технологии, с которыми я работаю
+`Python` · `Rust` · `Kubernetes` · `Docker` · `CI/CD` · `Linux` · `PostgreSQL` · `Redis` · `Распределённые системы`
 
 ---
-I love minimalism. Contact me: Telegram @maximusnescafe 
+Связаться со мной: Telegram **@raise0x**
