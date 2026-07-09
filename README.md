@@ -13,4 +13,4 @@
 `Python` · `Rust` · `Kubernetes` · `Docker` · `CI/CD` · `Linux` · `PostgreSQL` · `Redis` · `Распределённые системы`
 
 ---
-Связаться со мной: Telegram **@raise0x**
+Связаться со мной: Telegram **@dev_raise0x**
