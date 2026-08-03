@@ -3,7 +3,7 @@
 Строю платформы, которые запускают **чужой недоверенный код** и не падают от этого.
 Kubernetes, изоляция нагрузок, build-пайплайны, Python.
 
-**Открыт к работе:** Platform Engineer / DevOps / Infrastructure Backend.
+**Открыт к работе:** Platform Engineer / DevOps / Backend.
 Telegram — [@dev_raise0x](https://t.me/dev_raise0x)
 
 ---
