@@ -3,7 +3,7 @@
 Пишу бэкенд на Python: асинхронные сервисы на FastAPI, распределённая обработка на очередях, интеграции с внешними API, PostgreSQL. Отдельная сильная сторона — инфраструктура: строю платформы, которые запускают чужой недоверенный код и не падают от этого.
 
 **Открыт к работе:** Backend / Platform Engineer / DevOps. 
-Telegram — [@dev_raise0x](https://t.me/dev_raise0x)
+Telegram — [@raise0x](https://t.me/raise0x)
 
 ---
 
