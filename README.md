@@ -103,4 +103,4 @@ rate limiting: Envoy как data plane, gRPC-сервис с token bucket на R
 18 лет, коммерческий опыт. Ищу команду, где инфраструктура — не накладные расходы,
 а часть продукта.
 
-**[@dev_raise0x](https://t.me/dev_raise0x)** · maks.demkin87@gmail.com
+**[@raise0x](https://t.me/raise0x)** · maks.demkin87@gmail.com
