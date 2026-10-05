@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" width="840" height="260" role="img" aria-label="Prichal: git push → определение стека → сборка в песочнице → registry → Kubernetes">
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+    .mono{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace}
+    .node rect{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+    .hl{fill:none;stroke:#bc8cff;stroke-width:2;opacity:0;animation:hl 5s linear infinite}
+    @keyframes hl{0%{opacity:1}14%{opacity:0}100%{opacity:0}}
+    .h1{animation-delay:0s}.h2{animation-delay:1s}.h3{animation-delay:2s}.h4{animation-delay:3s}.h5{animation-delay:4s}
+    .dot{animation:run 5s linear infinite}
+    @keyframes run{0%{transform:translateX(0);opacity:1}80%{transform:translateX(664px);opacity:1}86%,100%{transform:translateX(664px);opacity:0}}
+    .live{animation:live 5s linear infinite}
+    @keyframes live{0%,78%{fill:#30363d}82%,100%{fill:#3fb950}}
+    .flow{stroke-dasharray:4 6;animation:dash 1s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-10}}
+  </style>
+  <rect x="0.5" y="0.5" width="839" height="259" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="40" class="sans"><tspan font-size="19" font-weight="700" fill="#e6edf3">Prichal — моя PaaS</tspan><tspan dx="12" font-size="15" fill="#8b949e">подключил репозиторий → получил живой сервис</tspan></text>
+  <text x="812" y="40" text-anchor="end" class="mono" font-size="12" fill="#6e7681">solo · ~6 мес</text>
+
+  <line class="flow" x1="88" y1="110" x2="752" y2="110" stroke="#30363d" stroke-width="2"/>
+  <circle class="dot" cx="88" cy="110" r="6" fill="#bc8cff"/>
+
+  <g class="node"><rect x="20" y="72" width="136" height="76" rx="10"/><rect class="hl h1" x="20" y="72" width="136" height="76" rx="10"/>
+    <text x="88" y="104" text-anchor="middle" class="mono" font-size="14" fill="#e6edf3">git push</text>
+    <text x="88" y="126" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">GitHub-репо</text></g>
+  <g class="node"><rect x="186" y="72" width="136" height="76" rx="10"/><rect class="hl h2" x="186" y="72" width="136" height="76" rx="10"/>
+    <text x="254" y="104" text-anchor="middle" class="sans" font-size="14" fill="#e6edf3">Узнаёт стек</text>
+    <text x="254" y="126" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">Nixpacks</text></g>
+  <g class="node"><rect x="352" y="72" width="136" height="76" rx="10"/><rect class="hl h3" x="352" y="72" width="136" height="76" rx="10"/>
+    <text x="420" y="104" text-anchor="middle" class="sans" font-size="14" fill="#e6edf3">Собирает</text>
+    <text x="420" y="126" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">BuildKit, без root</text></g>
+  <g class="node"><rect x="518" y="72" width="136" height="76" rx="10"/><rect class="hl h4" x="518" y="72" width="136" height="76" rx="10"/>
+    <text x="586" y="104" text-anchor="middle" class="sans" font-size="14" fill="#e6edf3">Registry</text>
+    <text x="586" y="126" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">неизменяемые теги</text></g>
+  <g class="node"><rect x="684" y="72" width="136" height="76" rx="10"/><rect class="hl h5" x="684" y="72" width="136" height="76" rx="10"/>
+    <circle class="live" cx="702" cy="99" r="5"/>
+    <text x="758" y="104" text-anchor="middle" class="sans" font-size="14" fill="#e6edf3">Kubernetes</text>
+    <text x="752" y="126" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">namespace + Postgres</text></g>
+
+  <!-- guarantees -->
+  <g class="sans" font-size="13">
+    <rect x="20" y="176" width="256" height="58" rx="10" fill="#bc8cff" fill-opacity=".08" stroke="#bc8cff" stroke-opacity=".35"/>
+    <text x="36" y="200" fill="#bc8cff" font-weight="700">Чужой код — в песочнице</text>
+    <text x="36" y="220" fill="#8b949e">gVisor, а не ядро ноды</text>
+    <rect x="292" y="176" width="256" height="58" rx="10" fill="#58a6ff" fill-opacity=".08" stroke="#58a6ff" stroke-opacity=".35"/>
+    <text x="308" y="200" fill="#58a6ff" font-weight="700">Сеть закрыта по умолчанию</text>
+    <text x="308" y="220" fill="#8b949e">Cilium, тенанты не видят друг друга</text>
+    <rect x="564" y="176" width="256" height="58" rx="10" fill="#3fb950" fill-opacity=".08" stroke="#3fb950" stroke-opacity=".35"/>
+    <text x="580" y="200" fill="#3fb950" font-weight="700">Обновления не ломают прод</text>
+    <text x="580" y="220" fill="#8b949e">миграции под lock, откат в 1 клик</text>
+  </g>
+</svg>

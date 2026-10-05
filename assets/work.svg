@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" width="840" height="250" role="img" aria-label="Коммерческий проект: Telegram-каналы → 9 сервисов на RabbitMQ + LLM → интернет-магазины">
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+    .mono{font-family:SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace}
+    .p{animation:p 3s linear infinite;opacity:0}
+    @keyframes p{0%{transform:translateX(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateX(118px);opacity:0}}
+    .b{animation-delay:1s}.c{animation-delay:2s}
+    .q rect{animation:q 1.5s ease-in-out infinite}
+    @keyframes q{0%,100%{fill-opacity:.25}50%{fill-opacity:.9}}
+    .q rect:nth-child(2){animation-delay:.25s}.q rect:nth-child(3){animation-delay:.5s}.q rect:nth-child(4){animation-delay:.75s}
+  </style>
+  <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="40" class="sans"><tspan font-size="19" font-weight="700" fill="#e6edf3">Коммерческий проект</tspan><tspan dx="12" font-size="15" fill="#8b949e">единственный backend · e-commerce · окт 2025 — мар 2026</tspan></text>
+
+  <!-- source -->
+  <rect x="20" y="70" width="190" height="96" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="115" y="108" text-anchor="middle" class="sans" font-size="15" fill="#e6edf3">Telegram-каналы</text>
+  <text x="115" y="130" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">посты поставщиков</text>
+
+  <!-- core -->
+  <rect x="330" y="62" width="180" height="112" rx="10" fill="#161b22" stroke="#d29922" stroke-opacity=".6" stroke-width="1.5"/>
+  <text x="420" y="94" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">9 сервисов</text>
+  <text x="420" y="114" text-anchor="middle" class="mono" font-size="12" fill="#d29922">RabbitMQ + LLM</text>
+  <g class="q">
+    <rect x="368" y="132" width="20" height="24" rx="3" fill="#d29922"/>
+    <rect x="398" y="132" width="20" height="24" rx="3" fill="#d29922"/>
+    <rect x="428" y="132" width="20" height="24" rx="3" fill="#d29922"/>
+    <rect x="458" y="132" width="20" height="24" rx="3" fill="#d29922"/>
+  </g>
+
+  <!-- target -->
+  <rect x="630" y="70" width="190" height="96" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="725" y="108" text-anchor="middle" class="sans" font-size="15" fill="#e6edf3">Интернет-магазины</text>
+  <text x="725" y="130" text-anchor="middle" class="sans" font-size="12" fill="#8b949e">InSales · WooCommerce</text>
+
+  <!-- flows -->
+  <line x1="212" y1="118" x2="328" y2="118" stroke="#30363d" stroke-width="2"/>
+  <line x1="512" y1="118" x2="628" y2="118" stroke="#30363d" stroke-width="2"/>
+  <g fill="#58a6ff"><circle class="p" cx="212" cy="118" r="4"/><circle class="p b" cx="212" cy="118" r="4"/><circle class="p c" cx="212" cy="118" r="4"/></g>
+  <g fill="#3fb950"><circle class="p" cx="512" cy="118" r="4"/><circle class="p b" cx="512" cy="118" r="4"/><circle class="p c" cx="512" cy="118" r="4"/></g>
+
+  <!-- result -->
+  <text x="420" y="214" text-anchor="middle" class="sans" font-size="15"><tspan fill="#8b949e">Было: </tspan><tspan fill="#e6edf3">менеджер заводил карточки руками</tspan><tspan fill="#6e7681" dx="10">→</tspan><tspan fill="#8b949e" dx="10">Стало: </tspan><tspan fill="#3fb950" font-weight="700">тысячи позиций за пару часов</tspan></text>
+</svg>
