@@ -2,15 +2,9 @@
 
 <picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 сервисов на RabbitMQ. Причал: 75 эндпоинтов и 180 тестов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
 
-## [Причал](https://prichal.tech) — моя PaaS
+<a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/flow-m.svg"><img src="assets/flow.svg" width="100%" alt="Причал — prichal.tech: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture></a>
 
-<a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/flow-m.svg"><img src="assets/flow.svg" width="100%" alt="Как работает Причал: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture></a>
-
-- **Чужой код — в песочнице.** Каждый контейнер пользователя работает в gVisor, а не на ядре ноды.
-- **Сеть закрыта по умолчанию.** Проекты разных пользователей не видят друг друга.
-- **Сборка без root.** Образы собирает rootless BuildKit, теги неизменяемые — любой деплой воспроизводим.
-
-**→ [prichal.tech](https://prichal.tech)** — можно зарегистрироваться и задеплоить свой проект.
+<a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/facts-m.svg"><img src="assets/facts.svg" width="100%" alt="Чужой код — в песочнице gVisor. Сеть закрыта по умолчанию. Сборка без root."></picture></a>
 
 <details>
 <summary><b>Как это устроено внутри</b> — для тех, кто любит детали</summary>
@@ -57,17 +51,7 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
 </details>
 
-## Коммерческий опыт
-
-**Сейчас · AI-инженерная система** · коммерческий проект
-
-Строю управляемую систему разработки: ИИ-агенты пишут код, тестируют и делают технический анализ,
-а я ставлю им задачи, координирую и отвечаю за то, чтобы продукт в итоге реально работал.
-
-**Backend-разработчик (контракт)** · e-commerce · NDA · *окт 2025 — мар 2026*
-
-Посты поставщиков из Telegram → обогащение через LLM → готовые карточки в магазинах.
-Тысячи позиций за пару часов вместо ручной работы менеджера.
+<picture><source media="(max-width: 600px)" srcset="assets/experience-m.svg"><img src="assets/experience.svg" width="100%" alt="Коммерческий опыт: сейчас — AI-инженерная система на ИИ-агентах; окт 2025 — мар 2026 — backend-разработчик, 9 сервисов на RabbitMQ."></picture>
 
 <details>
 <summary><b>Что именно я сделал</b></summary>
@@ -90,25 +74,25 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
 </details>
 
-## Другие проекты
+<picture><source media="(max-width: 600px)" srcset="assets/projects-m.svg"><img src="assets/projects.svg" width="100%" alt="Другие проекты"></picture>
 
-**Платформы и инфраструктура**
+<a href="https://github.com/0xRaiseX/deploy-platform-showcase"><picture><source media="(max-width: 600px)" srcset="assets/p-deploy-platform-showcase-m.svg"><img src="assets/p-deploy-platform-showcase.svg" width="100%" alt="deploy-platform-showcase — Открытый срез кода Причала: как устроены сборка, деплой и живые логи."></picture></a>
 
-- **[deploy-platform-showcase](https://github.com/0xRaiseX/deploy-platform-showcase)** — открытый срез кода Причала: как устроены сборка, деплой и логи.
-- **[global-rate-limiter](https://github.com/0xRaiseX/global-rate-limiter)** — ограничение запросов для всего трафика: Envoy, gRPC, Redis, аналитика в ClickHouse.
-- **[super-octo-bassoon](https://github.com/0xRaiseX/super-octo-bassoon)** — первый прототип платформы: деплой Docker-образов в Kubernetes одной кнопкой.
-- **[prichal-sample](https://github.com/0xRaiseX/prichal-sample)** — пример приложения: нажал «Deploy» — через минуту оно в сети.
-- **[simple-app](https://github.com/0xRaiseX/simple-app)** — REST API с Docker, CI и развёртыванием через Ansible.
+<a href="https://github.com/0xRaiseX/global-rate-limiter"><picture><source media="(max-width: 600px)" srcset="assets/p-global-rate-limiter-m.svg"><img src="assets/p-global-rate-limiter.svg" width="100%" alt="global-rate-limiter — Ограничение запросов для всего трафика: Envoy, gRPC, Redis, аналитика в ClickHouse."></picture></a>
 
-**Бэкенд**
+<a href="https://github.com/0xRaiseX/super-octo-bassoon"><picture><source media="(max-width: 600px)" srcset="assets/p-super-octo-bassoon-m.svg"><img src="assets/p-super-octo-bassoon.svg" width="100%" alt="super-octo-bassoon — Первый прототип платформы: деплой Docker-образов в Kubernetes одной кнопкой."></picture></a>
 
-- **[tender-tracker](https://github.com/0xRaiseX/tender-tracker)** — учёт тендеров с журналом статусов, который нельзя подделать.
-- **[album-catalog](https://github.com/0xRaiseX/album-catalog)** — каталог музыки на Django: исполнители, альбомы, треклисты.
-- **[ecdsa](https://github.com/0xRaiseX/ecdsa)** — цифровые подписи на кривой secp256k1 на Rust.
+<a href="https://github.com/0xRaiseX/tender-tracker"><picture><source media="(max-width: 600px)" srcset="assets/p-tender-tracker-m.svg"><img src="assets/p-tender-tracker.svg" width="100%" alt="tender-tracker — Учёт тендеров с журналом статусов, который нельзя подделать на уровне базы."></picture></a>
 
-**Сайты**
+<a href="https://github.com/0xRaiseX/album-catalog"><picture><source media="(max-width: 600px)" srcset="assets/p-album-catalog-m.svg"><img src="assets/p-album-catalog.svg" width="100%" alt="album-catalog — Каталог музыки на Django: исполнители, альбомы и треклисты."></picture></a>
 
-- **[avtokran-pskov](https://github.com/0xRaiseX/avtokran-pskov)** — лендинг услуги аренды автокрана.
+<a href="https://github.com/0xRaiseX/prichal-sample"><picture><source media="(max-width: 600px)" srcset="assets/p-prichal-sample-m.svg"><img src="assets/p-prichal-sample.svg" width="100%" alt="prichal-sample — Приложение-образец: нажал «Deploy» — через минуту оно в сети."></picture></a>
+
+<a href="https://github.com/0xRaiseX/simple-app"><picture><source media="(max-width: 600px)" srcset="assets/p-simple-app-m.svg"><img src="assets/p-simple-app.svg" width="100%" alt="simple-app — REST API с Docker, CI и развёртыванием через Ansible."></picture></a>
+
+<a href="https://github.com/0xRaiseX/ecdsa"><picture><source media="(max-width: 600px)" srcset="assets/p-ecdsa-m.svg"><img src="assets/p-ecdsa.svg" width="100%" alt="ecdsa — Цифровые подписи на кривой secp256k1, написано на Rust."></picture></a>
+
+<a href="https://github.com/0xRaiseX/avtokran-pskov"><picture><source media="(max-width: 600px)" srcset="assets/p-avtokran-pskov-m.svg"><img src="assets/p-avtokran-pskov.svg" width="100%" alt="avtokran-pskov — Лендинг услуги аренды автокрана."></picture></a>
 
 <details>
 <summary><b>Ранние проекты</b> — с них всё началось</summary>
@@ -121,13 +105,8 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
 </details>
 
-## Стек
-
-`Python` `FastAPI` `async SQLAlchemy` `Django` `Rust` · `AI-агенты` `LLM` · `Kubernetes` `Cilium` `gVisor` `BuildKit`
-`Longhorn` `CloudNativePG` · `PostgreSQL` `Redis` `RabbitMQ` `ClickHouse` · `Linux` `GitHub Actions`
-
-<br>
+<picture><source media="(max-width: 600px)" srcset="assets/stack-m.svg"><img src="assets/stack.svg" width="100%" alt="Стек: Python, FastAPI, Django, Rust, Kubernetes, Cilium, gVisor, PostgreSQL, Redis, RabbitMQ, ClickHouse, ИИ-агенты, LLM"></picture>
 
 <a href="https://t.me/raise0x"><picture><source media="(max-width: 600px)" srcset="assets/contact-m.svg"><img src="assets/contact.svg" width="100%" alt="Написать в Telegram: @raise0x"></picture></a>
 
-<p align="center"><sub>18 лет · ищу команду, где инфраструктура — часть продукта · maks.demkin87@gmail.com</sub></p>
+<p align="center"><sub><a href="https://prichal.tech">prichal.tech</a> · <a href="https://t.me/raise0x">t.me/raise0x</a> · maks.demkin87@gmail.com</sub></p>
