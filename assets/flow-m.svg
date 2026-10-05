@@ -10,6 +10,7 @@
 <rect width="480" height="640" rx="16" fill="#08090a"/>
 <rect x=".5" y=".5" width="479" height="639" rx="15.5" fill="none" stroke="#fafafc" stroke-opacity=".09"/>
 <text x="30" y="50" class="m" font-size="13" fill="#34dfaa" fill-opacity=".85">ПРИЧАЛ · PAAS</text>
+<text x="450" y="50" text-anchor="end" class="m" font-size="13" fill="#fafafc" fill-opacity=".6">prichal.tech ↗</text>
 <text x="30" y="86" class="s" font-size="24" font-weight="500" fill="#fafafc">Подключил репозиторий —</text>
 <text x="30" y="116" class="s" font-size="24" font-weight="500" fill="#fafafc">через минуту сайт в интернете.</text>
 <line x1="54" y1="150" x2="54" y2="572" stroke="#fafafc" stroke-opacity=".12"/>
@@ -25,7 +26,7 @@
 <rect class="hl" style="animation-delay:1.10s" x="28" y="238" width="424" height="70" rx="12" fill="#34dfaa" fill-opacity=".07" stroke="#34dfaa" stroke-width="1.5"/>
 <text x="46" y="280" class="m" font-size="13" fill="#fafafc" fill-opacity=".4">02</text>
 <text x="84" y="270" class="s" font-size="22" font-weight="500" fill="#fafafc">стек</text>
-<text x="84" y="292" class="m" font-size="13" fill="#fafafc" fill-opacity=".5">определяю сам · Nixpacks</text>
+<text x="84" y="292" class="m" font-size="13" fill="#fafafc" fill-opacity=".5">определяется автоматически</text>
 </g>
 <g>
 <rect x="28" y="326" width="424" height="70" rx="12" fill="#08090a" stroke="#fafafc" stroke-opacity=".12"/>
