@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/raise0x"><img src="https://img.shields.io/badge/Telegram-@raise0x-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+  <a href="https://prichal.tech"><img src="https://img.shields.io/badge/Prichal-prichal.tech-0a0b0d?style=for-the-badge&labelColor=3fb950&logoColor=white" alt="prichal.tech"></a>
   <a href="mailto:maks.demkin87@gmail.com"><img src="https://img.shields.io/badge/Email-написать-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Открыт_к_работе-Backend_·_Platform_·_DevOps-3fb950?style=for-the-badge" alt="Открыт к работе">
 </p>
@@ -11,10 +12,10 @@
 <br>
 
 <p align="center">
-  <img src="assets/prichal.svg" width="100%" alt="Prichal: git push → определение стека → сборка без root → registry → Kubernetes">
+  <a href="https://prichal.tech"><img src="assets/prichal.svg" width="100%" alt="Prichal (prichal.tech): git push → сборка без root → registry → Kubernetes"></a>
 </p>
 
-**Prichal** — PaaS для деплоя из GitHub в один клик. Один разработчик, ~6 месяцев: бэкенд, фронт, инфраструктура, эксплуатация кластера.
+**[Prichal](https://prichal.tech)** — PaaS для деплоя из GitHub в один клик, уже работает: **[prichal.tech](https://prichal.tech)**. Один разработчик, ~6 месяцев: бэкенд, фронт, инфраструктура, эксплуатация кластера.
 
 <details>
 <summary><b>Как это устроено внутри →</b></summary>
@@ -33,7 +34,7 @@ Cilium, egress-контроль, сетевые политики между те
 выйти за границу» — и прогоняется после каждого изменения CNI, gVisor или политик.
 
 **Сборка образов без Docker-демона и без привилегий.**
-Nixpacks + rootless BuildKit внутри gVisor, в отдельном неймспейсе с ResourceQuota.
+Rootless BuildKit внутри gVisor, в отдельном неймспейсе с ResourceQuota.
 Образы уезжают в приватный registry неизменяемыми тегами — деплой всегда воспроизводим.
 
 **Обновления платформы не ломают прод.**
@@ -54,6 +55,15 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 > Код закрыт — платформа коммерческая. Готов провести по архитектуре и показать живой деплой на созвоне.
 
 </details>
+
+<br>
+
+<p align="center">
+  <img src="assets/ai.svg" width="100%" alt="AI-инженерия: я ставлю задачи и координирую, ИИ-агенты пишут код, тестируют и анализируют, на выходе — работающий продукт">
+</p>
+
+**AI-инженерия, коммерческий опыт.** Строю управляемую инженерную систему: ИИ-агенты программируют, тестируют
+и проводят технический анализ, а я ставлю им задачи, координирую и отвечаю за то, чтобы конечный продукт реально работал.
 
 <br>
 
