@@ -1,6 +1,6 @@
 <picture><source media="(max-width: 600px)" srcset="assets/hero-m.svg"><img src="assets/hero.svg" width="100%" alt="Максим — backend и infrastructure инженер. Пишу бэкенд на Python. Настраиваю серверы так, чтобы сервисы не падали. В одиночку запустил и веду свою PaaS Причал — prichal.tech. Сейчас в коммерции веду команду ИИ-агентов."></picture>
 
-<picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 сервисов на RabbitMQ. Причал: 75 эндпоинтов и 180 тестов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 микросервисов в проде. Причал: более 2 400 автотестов и около 150 API-эндпоинтов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
 
 <a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/flow-m.svg"><img src="assets/flow.svg" width="100%" alt="Причал — prichal.tech: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture></a>
 
@@ -42,7 +42,7 @@ Preflight понодно и статус `pending_capacity` вместо лож�
 БД с local NVMe и тейнтом, Longhorn под тома, CloudNativePG — Postgres на пользователя.
 k3s с ручным hardening до дефолтов RKE2; миграция на RKE2 — по мере роста.
 
-**Масштаб:** 75 REST-эндпоинтов, ~18 800 строк Python, 180 тестов на pytest,
+**Масштаб:** ~150 REST-эндпоинтов, ~39 000 строк Python, ~1 950 тестов на pytest и ~470 на фронтенде,
 6 асинхронных воркеров поверх Redis-очереди с FIFO-гарантией.
 Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
@@ -51,14 +51,14 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
 </details>
 
-<picture><source media="(max-width: 600px)" srcset="assets/experience-m.svg"><img src="assets/experience.svg" width="100%" alt="Коммерческий опыт: сейчас — AI-инженерная система на ИИ-агентах; окт 2025 — мар 2026 — backend-разработчик, 9 сервисов на RabbitMQ."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/experience-m.svg"><img src="assets/experience.svg" width="100%" alt="Коммерческий опыт: сейчас — AI-инженерная система на ИИ-агентах; окт 2025 — мар 2026 — backend-разработчик, 9 микросервисов."></picture>
 
 <details>
 <summary><b>Что именно я сделал</b></summary>
 
 <br>
 
-Спроектировал и в одиночку реализовал распределённое ядро из **9 сервисов на RabbitMQ**:
+Спроектировал и в одиночку реализовал распределённое ядро из **9 микросервисов**, связанных очередями RabbitMQ:
 бот на aiogram, FastAPI и 6 асинхронных воркеров, оркестратор двухуровневых workflow
 с политиками ошибок на каждом этапе. 22 модели SQLAlchemy, 65 миграций, 33 эндпоинта.
 Выгрузка в InSales и WooCommerce.
