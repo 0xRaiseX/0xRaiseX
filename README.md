@@ -1,47 +1,19 @@
-# Максим — Backend-инженер
+<picture><source media="(max-width: 600px)" srcset="assets/hero-m.svg"><img src="assets/hero.svg" width="100%" alt="Максим — backend и infrastructure инженер. Пишу бэкенд на Python. Строю инфраструктуру, где чужой код не опасен. В одиночку запустил и веду свою PaaS Причал. Коммерческий опыт: 9 сервисов в проде."></picture>
 
-Пишу бэкенд на Python: асинхронные сервисы на FastAPI, распределённая обработка на очередях, интеграции с внешними API, PostgreSQL. Отдельная сильная сторона — инфраструктура: строю платформы, которые запускают чужой недоверенный код и не падают от этого.
+<picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 сервисов на RabbitMQ. Причал: 75 эндпоинтов и 180 тестов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
 
-**Открыт к работе:** Backend / Platform Engineer / DevOps. 
-Telegram — [@raise0x](https://t.me/raise0x)
+## Причал — моя PaaS
 
----
+<picture><source media="(max-width: 600px)" srcset="assets/flow-m.svg"><img src="assets/flow.svg" width="100%" alt="Как работает Причал: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture>
 
-## Коммерческий опыт
+- **Чужой код — в песочнице.** Каждый контейнер пользователя работает в gVisor, а не на ядре ноды.
+- **Сеть закрыта по умолчанию.** Проекты разных пользователей не видят друг друга.
+- **Сборка без root.** Образы собирает rootless BuildKit, теги неизменяемые — любой деплой воспроизводим.
 
-**Backend-разработчик (контракт)** · автоматизация товарного контента для e-commerce · NDA
-*Октябрь 2025 — март 2026 · единственный backend-разработчик проекта*
+<details>
+<summary><b>Как это устроено внутри</b> — для тех, кто любит детали</summary>
 
-Система забирает товарные посты из Telegram-каналов поставщиков, обогащает данные через
-LLM и выгружает готовые карточки в магазины на InSales и WooCommerce. Раньше менеджер
-заводил карточки руками — теперь тысячи позиций обрабатываются за пару часов.
-
-Спроектировал и в одиночку реализовал распределённое ядро из **9 сервисов на RabbitMQ**:
-бот на aiogram, FastAPI и 6 асинхронных воркеров, оркестратор двухуровневых workflow
-с политиками ошибок на каждом этапе. 22 модели SQLAlchemy, 65 миграций, 33 эндпоинта.
-
-Отдельно — то, чем горжусь больше кода: чинил корневые причины. Падавшие фоновые задачи —
-не ретраями, а PgBouncer'ом и разделением async/sync-подключений. Зависшие консьюмеры
-RabbitMQ — разбором логики `ack`. Гонки за общий файл сессии Telethon — распределённым
-локом на Redis.
-
-`Python 3.13` `FastAPI` `RabbitMQ / aio-pika` `PostgreSQL + PgBouncer` `Redis`
-`OpenAI API` `Prometheus / Loki` `Docker Compose (17 сервисов)`
-
----
-
-## Prichal — PaaS для деплоя из GitHub в один клик
-
-Пользователь подключает репозиторий — платформа определяет стек, собирает образ и
-раскатывает его в изолированный неймспейс Kubernetes. Логи в реальном времени,
-откат в один клик, свой Postgres на пользователя.
-
-Один разработчик, ~6 месяцев: бэкенд, фронтенд, инфраструктура и эксплуатация кластера.
-75 REST-эндпоинтов, ~18 800 строк Python, 180 тестов на pytest, 6 асинхронных воркеров
-поверх Redis-очереди с FIFO-гарантией и честным распределением конкурентности.
-Python / FastAPI · React 19 / TypeScript · Kubernetes.
-
-### Инженерные решения
+<br>
 
 **Пользовательский код исполняется в песочнице, а не на ядре ноды.**
 Threat model — недоверенный код: пользователь не имеет доступа к манифестам и к
@@ -74,31 +46,55 @@ Preflight понодно и статус `pending_capacity` вместо лож�
 БД с local NVMe и тейнтом, Longhorn под тома, CloudNativePG — Postgres на пользователя.
 k3s с ручным hardening до дефолтов RKE2; миграция на RKE2 — по мере роста.
 
+**Масштаб:** 75 REST-эндпоинтов, ~18 800 строк Python, 180 тестов на pytest,
+6 асинхронных воркеров поверх Redis-очереди с FIFO-гарантией.
+Python / FastAPI · React 19 / TypeScript · Kubernetes.
+
 > Код закрыт — платформа коммерческая. Готов провести по архитектуре и показать
 > живой деплой на созвоне.
 
----
+</details>
+
+## Коммерческий опыт
+
+**Backend-разработчик (контракт)** · e-commerce · NDA · *окт 2025 — мар 2026*
+
+Посты поставщиков из Telegram → обогащение через LLM → готовые карточки в магазинах.
+Тысячи позиций за пару часов вместо ручной работы менеджера.
+
+<details>
+<summary><b>Что именно я сделал</b></summary>
+
+<br>
+
+Спроектировал и в одиночку реализовал распределённое ядро из **9 сервисов на RabbitMQ**:
+бот на aiogram, FastAPI и 6 асинхронных воркеров, оркестратор двухуровневых workflow
+с политиками ошибок на каждом этапе. 22 модели SQLAlchemy, 65 миграций, 33 эндпоинта.
+Выгрузка в InSales и WooCommerce.
+
+Чинил корневые причины, а не симптомы:
+
+- падавшие фоновые задачи — PgBouncer'ом и разделением async/sync-подключений, а не ретраями;
+- зависшие консьюмеры RabbitMQ — разбором логики `ack`;
+- гонки за общий файл сессии Telethon — распределённым локом на Redis.
+
+`Python 3.13` `FastAPI` `RabbitMQ / aio-pika` `PostgreSQL + PgBouncer` `Redis`
+`OpenAI API` `Prometheus / Loki` `Docker Compose (17 сервисов)`
+
+</details>
 
 ## Ещё
 
-**[global-rate-limiter](https://github.com/0xraisex/global-rate-limiter)** — распределённый
-rate limiting: Envoy как data plane, gRPC-сервис с token bucket на Redis, агрегация
-логов в ClickHouse, статистическое детектирование аномалий на FastAPI. Multi-tenant,
-изоляция тенантов через неймспейсинг в Redis, fail-open.
-
-**[ecdsa](https://github.com/0xraisex/ecdsa)** — ECDSA secp256k1 на Rust, с нуля.
-
----
+- **[global-rate-limiter](https://github.com/0xraisex/global-rate-limiter)** — распределённый rate limiting: Envoy, gRPC, token bucket на Redis, аналитика в ClickHouse.
+- **[ecdsa](https://github.com/0xraisex/ecdsa)** — ECDSA secp256k1 на Rust, с нуля.
 
 ## Стек
 
-`Python` `FastAPI` `async SQLAlchemy` `Rust` · `Kubernetes` `Cilium` `gVisor`
-`Longhorn` `CloudNativePG` `BuildKit` · `PostgreSQL` `Redis` `ClickHouse` ·
-`Linux` `nftables` `cloud-init` `CI/CD` `GitHub Actions`
+`Python` `FastAPI` `async SQLAlchemy` `Rust` · `Kubernetes` `Cilium` `gVisor` `BuildKit`
+`Longhorn` `CloudNativePG` · `PostgreSQL` `Redis` `RabbitMQ` `ClickHouse` · `Linux` `GitHub Actions`
 
----
+<br>
 
-18 лет, коммерческий опыт. Ищу команду, где инфраструктура — не накладные расходы,
-а часть продукта.
+<a href="https://t.me/raise0x"><picture><source media="(max-width: 600px)" srcset="assets/contact-m.svg"><img src="assets/contact.svg" width="100%" alt="Написать в Telegram: @raise0x"></picture></a>
 
-**[@raise0x](https://t.me/raise0x)** · maks.demkin87@gmail.com
+<p align="center"><sub>18 лет · ищу команду, где инфраструктура — часть продукта · maks.demkin87@gmail.com</sub></p>
