@@ -10,7 +10,7 @@
     .q rect:nth-child(2){animation-delay:.25s}.q rect:nth-child(3){animation-delay:.5s}.q rect:nth-child(4){animation-delay:.75s}
   </style>
   <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0d1117" stroke="#30363d"/>
-  <text x="28" y="40" class="sans"><tspan font-size="19" font-weight="700" fill="#e6edf3">Коммерческий проект</tspan><tspan dx="12" font-size="15" fill="#8b949e">единственный backend · e-commerce · окт 2025 — мар 2026</tspan></text>
+  <text x="28" y="40" class="sans"><tspan font-size="19" font-weight="700" fill="#e6edf3">E-commerce автоматизация</tspan><tspan dx="12" font-size="15" fill="#8b949e">коммерческий проект · единственный backend · 2025—2026</tspan></text>
 
   <!-- source -->
   <rect x="20" y="70" width="190" height="96" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
