@@ -1,6 +1,6 @@
 <picture><source media="(max-width: 600px)" srcset="assets/hero-m.svg"><img src="assets/hero.svg" width="100%" alt="Максим — backend и infrastructure инженер. Пишу бэкенд на Python. Настраиваю серверы так, чтобы сервисы не падали. В одиночку запустил и веду свою PaaS Причал — prichal.tech. Сейчас в коммерции веду команду ИИ-агентов."></picture>
 
-<picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 сервисов на RabbitMQ. Причал: 75 эндпоинтов и 180 тестов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/numbers-m.svg"><img src="assets/numbers.svg" width="100%" alt="Коммерция: 9 сервисов на RabbitMQ. Причал: 150 эндпоинтов и 2400+ тестов. Инфраструктура: 4 ноды Kubernetes в проде."></picture>
 
 ## [Причал](https://prichal.tech) — моя PaaS
 
