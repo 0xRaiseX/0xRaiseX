@@ -1,8 +1,8 @@
-<picture><source media="(max-width: 600px)" srcset="assets/hero-m.svg"><img src="assets/hero.svg" width="100%" alt="Максим Дёмкин — backend-инженер. Пишу бэкенд на Python и настраиваю серверы так, чтобы сервисы не падали. 9 сервисов на RabbitMQ, 150 эндпоинтов и 2400+ тестов в Причале, 4 ноды Kubernetes в проде. В одиночку запустил и веду свою PaaS Причал — prichal.tech. Сейчас веду команду ИИ-агентов, которые пишут и тестируют код."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/hero-m-v2.svg"><img src="assets/hero-v2.svg" width="100%" alt="Максим Дёмкин — backend-инженер. Пишу бэкенд на Python и настраиваю серверы так, чтобы сервисы не падали. 9 сервисов на RabbitMQ, 150 эндпоинтов и 2400+ тестов в Причале, 4 ноды Kubernetes в проде. В одиночку запустил и веду свою PaaS Причал — prichal.tech. Сейчас веду команду ИИ-агентов, которые пишут и тестируют код."></picture>
 
 ## [Причал](https://prichal.tech) — моя PaaS
 
-<a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/flow-m.svg"><img src="assets/flow.svg" width="100%" alt="Как работает Причал: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture></a>
+<a href="https://prichal.tech"><picture><source media="(max-width: 600px)" srcset="assets/flow-m-v2.svg"><img src="assets/flow-v2.svg" width="100%" alt="Как работает Причал: git push → определение стека → сборка без привилегий → песочница gVisor в Kubernetes → сайт онлайн"></picture></a>
 
 - **Чужой код — в песочнице.** Каждый контейнер пользователя работает в gVisor, а не на ядре ноды.
 - **Сеть закрыта по умолчанию.** Проекты разных пользователей не видят друг друга.
@@ -126,6 +126,6 @@ Python / FastAPI · React 19 / TypeScript · Kubernetes.
 
 <br>
 
-<a href="https://t.me/raise0x"><picture><source media="(max-width: 600px)" srcset="assets/contact-m.svg"><img src="assets/contact.svg" width="100%" alt="Написать в Telegram: @raise0x — ответ в тот же день"></picture></a>
+<a href="https://t.me/raise0x"><picture><source media="(max-width: 600px)" srcset="assets/contact-m-v2.svg"><img src="assets/contact-v2.svg" width="100%" alt="Написать в Telegram: @raise0x — ответ в тот же день"></picture></a>
 
 <p align="center"><sub>18 лет · ищу команду, где инфраструктура — часть продукта · maks.demkin87@gmail.com</sub></p>
